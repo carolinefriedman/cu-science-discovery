@@ -1,2 +1,6 @@
-# cu-science-discovery
-CU Science Discovery, Summer 2017
+# CU Science Discovery
+
+# Summer, 2017
+- Artistic Coding
+- Digital Animation
+- Web Design
