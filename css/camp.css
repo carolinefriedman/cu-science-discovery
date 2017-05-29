@@ -37,9 +37,11 @@ h4 {
 	font-size: 2em;
 	font-weight: 500;
 }
+/*
 .artistic-coding { background-color: rgba(255,0,165,0.8); }
 .digital-animation { background-color: rgba(0,155,255,0.8); }
 .web-design { background-color: rgba(165,0,255,0.8); }
+*/
 
 #container {
 	left: 0;
@@ -70,12 +72,15 @@ nav ul li {
 	margin-left: 50px;
 	padding-bottom: 10px;
 }
-nav ul li:hover { 
+/* page colors */
+nav.artistic-coding ul li:hover { 
+	border-bottom: 3px solid rgba(255,0,165,0.8);
+}
+nav.digital-animation ul li:hover { 
 	border-bottom: 3px solid rgba(0,155,255,0.8);
 }
-nav a.selected { 
-	border-bottom: 3px solid rgba(0,155,255,0.8); 
-	padding-bottom: 10px; 
+nav.web-design ul li:hover { 
+	border-bottom: 3px solid rgba(165,0,255,0.8);
 }
 nav #science-discovery { 
 	font-family: 'Montserrat', sans-serif;
@@ -142,6 +147,10 @@ section {
 	transition: all 200ms ease-out;
 }
 #learn-more a { text-decoration: none; }
+/* page colors */
+#learn-more.artistic-coding, #learn-more a.artistic-coding { background-color: rgba(255,0,165,0.8); }
+#learn-more.digital-animation, #learn-more a.digital-animation { background-color: rgba(0,155,255,0.8); }
+#learn-more.web-design, #learn-more a.web-design { background-color: rgba(165,0,255,0.8); }
 /* about */
 #about { }
 #about .content img { 
@@ -157,6 +166,7 @@ section {
 #timeline ul {
 	list-style-type: none; 
 	margin-top: 35px;
+	padding: 20px;
 	width: 100%;
 }
 #timeline ul li {
@@ -182,6 +192,10 @@ i.fa-calendar-plus-o {
 	transform: translate(-50%, 0);
 }
 */
+#timeline ul li:last-child { margin-bottom: 0; }
+#timeline ul.artistic-coding { background-color: rgba(255,0,165,0.8); }
+#timeline ul.digital-animation { background-color: rgba(0,155,255,0.8); }
+#timeline ul.web-design { background-color: rgba(165,0,255,0.8); }
 #timeline ul li.day {
 	border: 5px solid rgba(255,255,255,1.00); 
 	border-radius: 50%;
@@ -214,17 +228,17 @@ ul li #web-design { color: rgba(165,0,255,0.8); }
 /* downloads */
 #downloads { }
 #downloads h1 a { 
+	background-color: transparent;
 	transition: all 200ms ease-in;
 	transition: all 200ms ease-out;
 }
 #downloads h1 a:hover {
-	color: #fff;
 	transition: all 200ms ease-in;
 	transition: all 200ms ease-out;
 }
-#downloads .artistic-coding h1 a:hover { color: rgba(255,0,165,0.8); }
-#downloads .digital-animation h1 a:hover { color: rgba(0,155,255,0.8); }
-#downloads .web-design h1 a:hover { color: rgba(165,0,255,0.8); }
+h1.artistic-coding:hover { background-color: transparent; color: rgba(255,0,165,0.8); }
+h1.digital-animation:hover { color: rgba(0,155,255,0.8); }
+h1.web-design:hover { color: rgba(165,0,255,0.8); }
 /* footer */
 footer {
 	color: #fff;
@@ -269,6 +283,10 @@ footer ul li:first-child {
 	padding-left: 0; 
 }
 footer ul li:last-child { padding-right: 0; }
-.artistic-coding h4 a:hover { color: rgba(255,0,165,0.8); }
-.digital-animation h4 a:hover { color: rgba(0,155,255,0.8); }
-.web-design h4 a:hover { color: rgba(165,0,255,0.8); }
+/* page colors */
+footer.artistic-coding { background-color: rgba(255,0,165,0.8); }
+footer.artistic-coding h4 a:hover { color: rgba(255,0,165,0.8); }
+footer.digital-animation { background-color: rgba(0,155,255,0.8); }
+footer.digital-animation h4 a:hover { color: rgba(0,155,255,0.8); }
+footer.web-design { background-color: rgba(165,0,255,0.8); }
+footer.web-design h4 a:hover { color: rgba(165,0,255,0.8); }
